@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { nftDropContractAddress } from "../consts/contractAddresses";
 import styles from "../styles/Home.module.css";
 
+
 const Mint: NextPage = () => {
   const router = useRouter();
 
@@ -12,8 +13,8 @@ const Mint: NextPage = () => {
       <h1 className={styles.h1}>Mint An Meloshi!</h1>
 
       <p className={styles.explain}>
-        Here is where we use our <b>NFT Drop</b> contract to allow users to mint
-        one of the NFTs that we lazy minted.
+        Here is where we use our <b>Meloshis</b> contract to allow users to mint
+        one of the NFTs.
       </p>
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 

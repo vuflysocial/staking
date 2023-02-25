@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT */}
           <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Mint a new NFT</h2>
+          <h2 className={styles.selectBoxTitle}>Mint a new Meloshi</h2>
           <p className={styles.selectBoxDescription}>
             Mint an NFT from the collection.
           </p>
@@ -31,10 +31,10 @@ const Home: NextPage = () => {
         >
           {/* Staking an NFT */}
           <Image src="/icons/token.webp" alt="token" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Stake Your NFTs</h2>
+          <h2 className={styles.selectBoxTitle}>Stake Your Meloshi</h2>
           <p className={styles.selectBoxDescription}>
-            Use your NFT <b></b>{" "}
-            to stake your NFTs, and earn Melo tokens <b></b> contract.
+             <b></b>{" "}
+             Stake your NFTs, and earn Melo tokens <b></b> 
           </p>
         </div>
       </div>

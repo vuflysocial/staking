@@ -1,18 +1,25 @@
 import type { AppProps } from "next/app";
-import { useChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 
-// This is the chainId your dApp will work on.
-const activeChainId = 56
-
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
-    
-    <ThirdwebProvider desiredChainId={activeChainId}>
+    <ThirdwebProvider activeChain="binance">
       <Component {...pageProps} />
     </ThirdwebProvider>
-    
   );
 }
 
-export default MyApp;
+function MyComponent() {
+  const { contract, isLoading, error } = useContract(
+    "0xFdEEb8871a2183b367a24222f3e3c225a872d775"
+  );
+
+  if (isLoading) {
+    return <div>Loading contract...</div>;
+  } 
+}
+
+  
+
+export default App;
